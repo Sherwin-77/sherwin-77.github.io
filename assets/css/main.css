@@ -1,0 +1,91 @@
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  header {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+
+@media (min-width: 768px) {
+  header nav form {
+    width: 40%;
+  }
+}
+@media (min-width: 992px) {
+  header nav form {
+    width: 35%;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+}
+
+.visible {
+  animation: slideIn 0.8s ease-in-out;
+}
+body {
+  background: url("../images/bg.webp") no-repeat center center fixed;
+  background-size: cover;
+}
+aside {
+  background-color: rgba(var(--bs-secondary-bg-rgb), 0.5);
+  animation: fadeIn 1.2s ease-in-out;
+}
+#contents .card {
+  background-color: rgba(var(--bs-secondary-bg-rgb), 0.6);
+}
+.expand {
+  width: 30%;
+  transition: all 0.3s ease;
+}
+.expand:focus {
+  width: 100%;
+}
+#playground {
+  background-color: rgba(var(--bs-secondary-bg-rgb), 0.3);
+  cursor: url("../images/cursor.png") 50 55, pointer ;
+}
+#playground .container {
+  height: 100%;
+}
+#main-field {
+  border: 1px dotted yellow;
+  flex: 1;
+}
+#circle {
+  position: relative;
+  top: 30%;
+  left: 30%;
+  height: 4em;
+  width: 4em;
+  background-color: skyblue;
+  border: 1px solid blue;
+}
+#inner-circle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  width: 3em;
+  top: 50%;
+  left: 50%;
+  margin: -1.5em 0 0 -1.5em;
+  border: 1px solid blue;
+}
+#circle-number {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}

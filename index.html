@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SewentySewen</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/solid.min.css">
+    <script src="assets/js/theme-toggle.js"></script>
+</head>
+
+<body>
+    <header class="mb-3">
+        <nav class="navbar sticky-top d-flex py-2">
+            <div class="container-fluid px-5">
+                <button class="btn btn-outline-light px-3 py-2" id="theme-switcher">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-3 expand ms-auto" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary text-white" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="d-flex">
+            <!-- Left content -->
+            <div id="contents">
+                <div class="p-3 d-inline-block mb-3 rounded-pill anm">
+                    <h1 class="text-warning">This is SewentySewen</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3 anm">
+                        <div class="card">
+                            <img src="assets/images/sewenty-bot.webp" alt="sewenty-bot" class="card-img-top"/>
+                            <div class="card-body">
+                                <p class="card-text">My first actual project with python written in python using discord.py library</p>
+                                <a href="https://github.com/Sherwin-77/sewenty-bot" class="btn btn-outline-primary text-body">View in GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3 anm">
+                        <div class="card">
+                            <img src="assets/images/nextwit.webp" alt="sewenty-bot" class="card-img-top"/>
+                            <div class="card-body">
+                                <p class="card-text">Yet another social media website created for learning purpose</p>
+                                <a href="https://github.com/Sherwin-77/nextwit" class="btn btn-outline-primary text-body">View in GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-white">Nothing more. Why not check my <a href="https://github.com/Sherwin-77">GitHub</a></p>
+                <div class="border border-primary" style="height: 30em;" id="playground">
+                    <div class="container d-flex flex-column pb-3">
+                        <div style="height: 3em">
+                            <span id="scores" class="text-info display-6">0</span>
+                        </div>
+                        <div id="main-field">
+                            <div id="circle" class="rounded-circle">
+                                <div id="inner-circle" class="rounded-circle">
+                                    <span id="circle-number">1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bottom space -->
+                <span class="p-5"></span> 
+            </div>
+            <aside class="p-3 rounded align-self-start d-none d-lg-block ms-5" style="max-width: 25%;">
+                <span class="text-info">Small fact:</span>
+                <p>SewentySewen originated from my school days when my friend made a joke about question number 77. Therefore, I chose this nickname as I liked it.</p>
+            </aside>
+        </div>
+        <footer class="d-flex align-items-center justify-content-center text-white">
+            (Un)Copyright &copy; 2077 SewentySewen
+        </footer>
+    </main>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/jquery.viewportchecker.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
