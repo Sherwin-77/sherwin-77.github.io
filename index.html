@@ -21,10 +21,6 @@
                 <button class="btn btn-outline-light px-3 py-2" id="theme-switcher">
                     <i class="fa-solid fa-moon"></i>
                 </button>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-3 expand ms-auto" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary text-white" type="submit">Search</button>
-                </form>
             </div>
         </nav>
     </header>
@@ -32,22 +28,26 @@
         <div class="d-flex">
             <!-- Left content -->
             <div id="contents">
-                <div class="p-3 d-inline-block mb-3 rounded-pill anm">
-                    <h1 class="text-warning">This is SewentySewen</h1>
+                <div class="p-3 inline-block mb-3 anm" style="width: max-content;">
+                    <h1>This is SewentySewen</h1>
                 </div>
                 <div class="row">
                     <div class="col-md-6 mb-3 anm">
                         <div class="card">
-                            <img src="assets/images/sewenty-bot.webp" alt="sewenty-bot" class="card-img-top"/>
+                            <div class="img-wrapper">
+                                <img src="assets/images/sewenty-bot.webp" alt="sewenty-bot" class="card-img-top"/>
+                            </div>
                             <div class="card-body">
-                                <p class="card-text">My first actual project with python written in python using discord.py library</p>
+                                <p class="card-text">My first actual project written in python using discord.py library</p>
                                 <a href="https://github.com/Sherwin-77/sewenty-bot" class="btn btn-outline-primary text-body">View in GitHub</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 mb-3 anm">
                         <div class="card">
-                            <img src="assets/images/nextwit.webp" alt="sewenty-bot" class="card-img-top"/>
+                            <div class="img-wrapper">
+                                <img src="assets/images/nextwit.webp" alt="sewenty-bot" class="card-img-top"/>
+                            </div>
                             <div class="card-body">
                                 <p class="card-text">Yet another social media website created for learning purpose</p>
                                 <a href="https://github.com/Sherwin-77/nextwit" class="btn btn-outline-primary text-body">View in GitHub</a>
@@ -66,6 +66,7 @@
                                 <div id="inner-circle" class="rounded-circle">
                                     <span id="circle-number">1</span>
                                 </div>
+                                <div id="circle-effect" class="rounded-circle"></div>
                             </div>
                         </div>
                     </div>

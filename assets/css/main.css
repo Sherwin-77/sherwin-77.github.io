@@ -27,6 +27,15 @@
     opacity: 0;
   }
 }
+@keyframes typing {
+  from {width: 0}
+  50% {width: 100%;}
+  to {width: 100%;}
+}
+@keyframes blink-caret {
+  from, to {border-color:  transparent;}
+  50% {border-color: orange;}
+}
 
 .visible {
   animation: slideIn 0.8s ease-in-out;
@@ -39,8 +48,24 @@ aside {
   background-color: rgba(var(--bs-secondary-bg-rgb), 0.5);
   animation: fadeIn 1.2s ease-in-out;
 }
+h1 {
+  overflow: hidden;
+  width: 0;
+  white-space: nowrap;
+  color: yellow;
+  padding-right: .15em;
+  border-right: .1em solid orange;
+  animation: typing 3s alternate steps(40, end) infinite ,blink-caret 1.2s ease-in-out infinite;
+}
 #contents .card {
   background-color: rgba(var(--bs-secondary-bg-rgb), 0.6);
+}
+#contents .card-img-top:hover {
+  transform: scale(1.2);
+  transition: transform .2s ease-in-out;
+}
+.img-wrapper {
+  overflow: hidden;
 }
 .expand {
   width: 30%;
@@ -51,7 +76,7 @@ aside {
 }
 #playground {
   background-color: rgba(var(--bs-secondary-bg-rgb), 0.3);
-  cursor: url("../images/cursor.png") 50 55, pointer ;
+  cursor: url("../images/cursor.png") 50 55, pointer;
 }
 #playground .container {
   height: 100%;
@@ -59,9 +84,12 @@ aside {
 #main-field {
   border: 1px dotted yellow;
   flex: 1;
+  position: relative;
 }
 #circle {
-  position: relative;
+  /* Absolute so bad cant even use click event >:( */
+  position: absolute;
+  z-index: 1; 
   top: 30%;
   left: 30%;
   height: 4em;
@@ -80,6 +108,16 @@ aside {
   left: 50%;
   margin: -1.5em 0 0 -1.5em;
   border: 1px solid blue;
+}
+#circle-effect {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  height: 4em;
+  width: 4em;
+  border: 3px solid skyblue;
+  opacity: 0.8;
 }
 #circle-number {
   color: white;
